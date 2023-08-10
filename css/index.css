@@ -24,7 +24,7 @@ body{
 }
 
 .all-hero{
-    background-color: #2B57AA;
+    background-color: #1F01FF;
     padding: 6% 0;
 }
 .hero-text h1{
@@ -51,7 +51,102 @@ body{
     font-family: var(--font);
 
 }
+/* apply */
+.all-apply{
+    margin: 5% 0;
+}
+.all-apply .container{
+    background-color: #e4b17354;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px #e4b17354;
+}
+.all-apply div h2{
+    font-size: 30px;
+    font-family: var(--font);
+    /* font-weight: bold; */
+    line-height: 3rem;
+    font-weight: 550;
+}
+.all-apply div p{
+    font-size: 17px;
+    font-family: var(--font);
+}
+.all-apply div h4 span{
+    display: block;
+    font-size: 20px;
+    font-family: var(--font);
+    line-height: 2rem;
+}
+.all-apply div h4 span:first-child{
+    font-weight: 400;
+    font-size: 16px;
+}
+.apply-center{
+    border-left: 1px solid #555;
+}
+.apply-center button{
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #1F01FF;
+    color: white;
+    font-family: var(--font);
+    border-radius: 5px;
+}
 
+
+/* about */
+.all-about div h4{
+    margin: 5% 0;
+    font-family: var(--font);
+    font-size: 35px;
+}
+.all-about div h4 span{
+    color: #ED972F;
+}
+
+/* data analysis */
+.data-analysis {
+    margin: 5% 0;
+    padding: 30px;
+}
+.data-analysis div h6 span{
+    display: block;
+    line-height: 1.8rem;
+    font-family: var(--font);
+}
+.data-analysis div h6 span:nth-child(3){
+    color: #ED972F;
+}
+.data-analysis div h6 span:nth-child(1){
+    color: #1F01FF;
+    font-size: 30px;
+}
+.data-analysis div h6 span strong{
+    color: #ED972F;
+}
+ul li{
+    list-style-type: none;
+    line-height: 2rem;
+}
+ul li i{
+    color: #1F01FF;
+    margin-right: 10px;
+}
+.fee button{
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #1F01FF;
+    color: white;
+    font-family: var(--font);
+    border-radius: 5px;
+}
+.fee h4{
+    font-size: 20px;
+    font-family: var(--font);
+}
 
 @media(max-width: 600px){
     .hero-text h1{
@@ -75,6 +170,17 @@ body{
     }
     .hero-text{
         margin-top: 100px;
+    }
+    .data-analysis {
+        margin: 5% 0;
+        padding: 10px 0;
+    }
+    .data-analysis ul li{
+        font-size: 14px;
+        font-family: var(--font);
+    }
+    .data-analysis div h6{
+        margin-top: 30px;
     }
     
     
