@@ -142,17 +142,143 @@ ul li i{
     color: white;
     font-family: var(--font);
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 .fee h4{
     font-size: 20px;
     font-family: var(--font);
 }
 
+
+/* testimonials */
+.testimonial-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.test-1{
+    flex-basis: 48%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+}
+.test-1 p{
+    font-family: var(--font);
+    line-height: 1.8rem;
+}
+.person img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+.person p span{
+    display: block;
+}
+.person p{
+    margin-left: 10px;
+}
+.all-testimonials{
+    margin: 5% 0;
+}
+.all-testimonials h5{
+    color: #ED972F;
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+.all-testimonials h4{
+    font-size: 30px;
+    font-family: var(--font);
+    margin-bottom: 20px;
+}
+.mobile{
+    display: none;
+}
+.apply-hero{
+    background: linear-gradient(rgba(6, 69, 241, 0.9), rgba(33, 78, 226, 0.6)), url(../img/hero-2.webp) center/cover no-repeat fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apply-hero h3{
+    color: white;
+    font-size: 30px;
+    font-family: var(--font);
+    font-weight: bold;
+}
+.hero-content div a{
+    text-decoration: none;
+}
+.hero-content div a:first-child{
+    color: #ED972F;
+    font-family: var(--font);
+    font-size: 24px;
+}
+.hero-content div a:last-child{
+    color: #fff;
+    font-family: var(--font);
+    font-size: 24px;
+}
+.all-payment{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../img/data.webp) center/cover no-repeat fixed;
+    padding: 8% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-content{
+    background-color: white;
+    border-radius: 5px;
+    width: 35%;
+    padding: 20px;
+}
+.pay_amount h4 span{
+    display: block;
+    line-height: 1.6rem;
+    font-family: var(--font);
+}
+.pay_amount h4 span:nth-child(1){
+    font-size: 10px;
+    /* border-bottom: 1px solid #ccc; */
+}
+.pay_amount h4 span:nth-child(2){
+    font-size: 30px;
+}
+.pay_amount h4 span:nth-child(3){
+    font-size: 10px;
+}
+.pay-logo div h4{
+    font-size: 20px;
+    line-height: 2rem;
+    font-family: var(--font);
+}
+.pay-logo div img{
+    width: 125px;
+}
+.all-payment button{
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-family: var(--font);
+    background-color: #1F01FF;
+}
 @media(max-width: 600px){
     .hero-text h1{
         line-height: 2.5rem;
         font-size: 30px;
         /* text-align: center; */
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
     }
     .hero-text p{
         width: 100%;
@@ -183,5 +309,20 @@ ul li i{
         margin-top: 30px;
     }
     
-    
+    .test-1{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .apply-hero h3{
+        text-align: center;
+    }
+    .payment-content{
+        background-color: white;
+        border-radius: 5px;
+        width: 95%;
+        padding: 20px;
+    }
+    .pay-logo{
+        text-align: center;
+    }
 }
