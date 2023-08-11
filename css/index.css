@@ -13,7 +13,7 @@ body{
     z-index: 10;
 }
 .navbar-brand img{
-    width: 100px;
+    width: 200px;
 }
 .nav-item a{
     color: black;
@@ -154,22 +154,23 @@ ul li i{
 .testimonial-content{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .test-1{
     flex-basis: 48%;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    height: fit-content;
+    height: 300px;
 }
 .test-1 p{
     font-family: var(--font);
     line-height: 1.8rem;
+    font-size: 13px;
 }
 .person img{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
 }
 .person{
@@ -312,6 +313,9 @@ ul li i{
     .test-1{
         flex-basis: 100%;
         margin-bottom: 30px;
+        height: fit-content;
+        margin: 0 10px;
+        width: 100%;
     }
     .apply-hero h3{
         text-align: center;
