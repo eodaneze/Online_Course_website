@@ -238,6 +238,9 @@ ul li i{
     width: 35%;
     padding: 20px;
 }
+html{
+    scroll-behavior: smooth;
+}
 .pay_amount h4 span{
     display: block;
     line-height: 1.6rem;
