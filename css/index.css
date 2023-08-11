@@ -254,12 +254,12 @@ ul li i{
     font-size: 10px;
 }
 .pay-logo div h4{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 2rem;
     font-family: var(--font);
 }
 .pay-logo div img{
-    width: 125px;
+    width: 200px;
 }
 .all-payment button{
     width: 100%;
