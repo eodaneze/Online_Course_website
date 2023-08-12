@@ -209,92 +209,229 @@
         </div>
      </div>
       <!--end of machine learning  -->
-
+ <style>
+      /* testimonial */
+.slider-1{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+  }
+  .slider-content {
+    flex-basis: 32%;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    min-width: 250px;
+    transition: background 0.3s;
+  }
+  @media(max-width: 600px){
+    .slider-content{
+      height: fit-content;
+      flex-basis: 100%;
+    }
+  }
+  .slider-content:hover {
+    background: #c99a60;
+    color: white;
+    cursor: pointer;
+  }
+  .slider-content div p span {
+    display: block;
+  }
+  .slider-content div p {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: var(--font);
+    margin-top: 10px;
+  }
+  .rating i {
+    color: #ED972F;
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-family: var(--font);
+    font-size: 25px;
+  }
+  .title::after {
+    content: "";
+    background-color: #ED972F;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /*end of testimonial */
+ </style>
 
       <!-- testimonials -->
-      <div class="all-testimonials">
+      <div class="all-testimonials p-3" style="background-color: rgba(6, 69, 241, 0.9);">
           <div class="container">
-               <h5>TESTIMONIALS</h5>
-               <h4>What our students are saying...</h4>
-               <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+               <h5 class="text-white">TESTIMONIALS</h5>
+               <h4 style="color: #ED972F">What our students are saying...</h4>
+             
+               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="testimonial-content">
-                      <div class="test-1 border">
-                           <p><strong>Beginner friendly, surpassing expectations, mentally stimulating.</strong>These words best describe my experience at Codemindspace. I have always wanted to learn Python, but I was intimidated by the syntax and the concepts. Then I found this tutorial, and it changed everything. This bootcamp is clear, concise, and engaging. I highly recommend this bootcamp to anyone who wants to learn Python in a fun and easy way.</p>
-                           <div class="person">
-                               <img src="./img/IMG-20230810-WA0008.jpg" alt="">
-                               <div>
-                                   <p>
-                                     <span>Izuchukwu Charles</span>
-                                     <span>Data Analyst (Intermediate)</span>
-                                     
-                                   </p>
-                               </div>
-                           </div>
-                      </div>
-                      <div class="test-1 border">
-                           <p><strong>My experience at LM Tech Hub was a wonderful one</strong>. Meeting this great tutor was never an accident. I was thinking am done in not understanding analysis with python because I have watched a lot of videos on it without proper understanding. But when I stumbled on his lecture, I will say it's python made easy with his pattern of teaching.</p>
-                           <div class="person">
-                               <img src="./img/IMG-20230810-WA0011.jpg" alt="">
-                               <div>
-                                   <p>
-                                     <span>Caleb Enenche</span>
-                                     <span>Analyst enthusiast.</span>
-                                   </p>
-                               </div>
-                           </div>
-                      </div>
-                      
-                     
-                  </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="testimonial-content">
-                     
-                      <div class="test-1 border">
-                           <p>I am glad to say that I have learnt a lot from Gabriel Simeon's teaching on Python. He is a dedicated and an effective teacher. His teaching style is fabulous, which involves clear and detailed explanations of the basic principles that surround the course and ample with numerous exercises to ensure that learners not only understand the concepts but also acquire and develop practical skills. Therefore, I enjoin  you  to go through his tutelage to develop the needed skills in data science</p>
-                           <div class="person">
-                               <img src="./img/FB_IMG_16917427233528933.jpg" alt="">
-                               <div>
-                                   <p>
-                                     <span>Mr. Ugochukwu Onwudebele</span>
-                                     <span>Data scientist/cyber security expert</span>
-                                    
-                                   </p>
-                               </div>
-                           </div>
-                      </div>
-                      <div class="test-1 border">
-                           <p>Having gone through some lessons with Gabriel Simeon, the teaching methodology resonate with me, in terms of simplicity, compassion and patience. His always reay to help resolve a problem whenever he is called upon. This bootcamp has further boost my confidence which was more or less existing</p>
-                           <div class="person">
-                               <img src="./img/FB_IMG_16916932593349774.jpg" alt="">
-                               <div>
-                                   <p>
-                                     <span>Ambrose Ali</span>
-                                     <span>AI Enthusiast.</span>
-                                   </p>
-                               </div>
-                           </div>
-                      </div>
-                  </div>
-                 
-                  
+                    <div class="carousel-item active">
+                        <div class="slider-1">
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center">
+                                    <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                        src="./img/FB_IMG_16916932593349774.jpg">
+                                    <div>
+                                        <p>
+                                            <span>Ambrose Ali</span>
+                                            <span>AI Enthusiast.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>Having gone through some lessons with Gabriel Simeon, the teaching methodology resonate with me, in terms of simplicity, compassion and patience. His always reay to help resolve a problem whenever he is called upon. This bootcamp has further boost my confidence which was more or less existing</p>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center">
+                                    <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                        src="./img/FB_IMG_16917427233528933.jpg">
+                                    <div>
+                                        <p>
+                                            <span>Mr Ugochukwu Onwudebele</span>
+                                            <span>Data scientist/cyber security expert</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>I am glade to say that i have learnt a lot from Gabriel Simeon's teaching on Python. He is a dedicated and an effective teacher. His teaching style is fabulous, which involves clear and detailed explanations of the basic principles that surround the course and ample with numerous exercises to ensure that learners not only understand the concepts but also acquire and develop practical skills. Therefore, I enjoin you to go through his tutelage to develop the needed skills in data science<p>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center">
+                                    <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                        src="./img/IMG-20230810-WA0008.jpg">
+                                    <div>
+                                        <p>
+                                            <span>Izuchukwu Charles</span>
+                                            <span>Data Analyst (Intermediate)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p><strong>Beginner friendly, suparsing expectations, mentally stimulating</strong>.These words best describe my experience at Codemindspace. I have always wanted to learn Python, but I was intimidated by the syntax and the concepts. Then I found this tutorial, and it changed everything. This bootcamp is clear, concise, and engaging. I highly recommend this bootcamp to anyone who wants to learn Python in a fun and easy way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-1">
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center">
+                                    <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                        src="./img/IMG-20230810-WA0011.jpg">
+                                    <div>
+                                        <p>
+                                            <span>Caleb Enenche</span>
+                                            <span>Analyst enthusiast.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>My experience at Codemindspace was a wonderful one. Meeting this great tutor was never an accident. I was thinking am done in not understanding analysis with python because I have watched a lot of videos on it without proper understanding. But when I stumbled on his lecture, I will say it's python made easy with his pattern of teaching.</p>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center">
+                                    <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                        src="./img/IMG-20230811-WA0012.jpg">
+                                    <div>
+                                        <p>
+                                            <span>Price Elvis</span>
+                                            <span>Python Programmer</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>I am very much excited for being part of this exceptional data analytics program that we recently had the opportunity to participate in.
+                                      From the moment we began this program, it became abundantly clear that we were in the hands of true expert in the field, Mr Gabriel Simeon. I wholeheartedly recommend this program to anyone looking to develop a strong skill set in data analytics.</p>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                              <div class="d-flex align-items-center">
+                                  <img style="width: 3rem; height: 3rem; border-radius: 50%;"
+                                      src="./img/FB_IMG_16917427233528933.jpg">
+                                  <div>
+                                      <p>
+                                          <span>Mr Ugochukwu Onwudebele</span>
+                                          <span>Data scientist/cyber security expert</span>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="rating">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                              <div class="testimonial-text">
+                                  <p>I am glade to say that i have learnt a lot from Gabriel Simeon's teaching on Python. He is a dedicated and an effective teacher. His teaching style is fabulous, which involves clear and detailed explanations of the basic principles that surround the course and ample with numerous exercises to ensure that learners not only understand the concepts but also acquire and develop practical skills. Therefore, I enjoin you to go through his tutelage to develop the needed skills in data science<p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
           </div>
       </div>
       <!--end of testimonials -->

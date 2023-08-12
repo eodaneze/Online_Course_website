@@ -312,7 +312,59 @@ html{
     .data-analysis div h6{
         margin-top: 30px;
     }
-    
+    /* testimonial */
+.slider-1{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+  }
+  .slider-content {
+    flex-basis: 32%;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    min-width: 250px;
+    transition: background 0.3s;
+  }
+  .slider-content:hover {
+    background: rgba(0, 0, 60, 0.6);
+    color: white;
+    cursor: pointer;
+  }
+  .slider-content div p span {
+    display: block;
+  }
+  .slider-content div p {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: var(--font);
+    margin-top: 10px;
+  }
+  .rating i {
+    color: var(--warning);
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-family: var(--font);
+    font-size: 25px;
+  }
+  .title::after {
+    content: "";
+    background-color: var(--warning);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /*end of testimonial */
     .test-1{
         flex-basis: 100%;
         margin-bottom: 30px;
